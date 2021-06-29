@@ -1,0 +1,46 @@
+@import "variables";
+@import "colors";
+@import "global";
+@import "typography";
+
+.navbar {
+  background-color: $white;
+  box-shadow: 0px 3px 68px 0px rgba(4, 195, 255, 0.16);
+  height: 150px;
+  z-index: 397;
+  padding: 0 150px;
+
+  &-collapse {
+    justify-content: flex-end;
+  }
+
+  &-nav {
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .nav-link {
+    color: $black;
+    font-weight: 500;
+
+    &:active {
+      color: $clPrimary;
+    }
+  }
+
+  &-brand {
+    font-size: 78px;
+    color: $clPrimary;
+    font-weight: bold;
+  }
+}
+
+.page-fold {
+  background: url(../assets/happy-young-man-pointing-finger-aside_1262-14983.jpg);
+  background-size: 100%;
+  .photo {
+    width: 100%;
+
+    min-height: 100%;
+  }
+}
