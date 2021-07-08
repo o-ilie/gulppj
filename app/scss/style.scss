@@ -184,11 +184,60 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    margin-top: 4rem;
+    margin: 4rem;
 
     .card {
-      width: 370px;
+      justify-content: center;
+      padding: 3%;
+      flex: 1 1 30%;
+      max-width: 370px;
       height: 370px;
+      color: $white;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: bottom;
+
+      &-icon {
+        font-size: 5rem;
+      }
+
+      &-title {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      &-text {
+        line-height: 24px;
+      }
+
+      &-1 {
+        background-color: #8540ff;
+        box-shadow: 0px 3px 68px 0px rgba(133, 64, 255, 0.35);
+        background-image: url(../../assets/shapebg1.svg);
+      }
+
+      &-2 {
+        background-color: #ffc50c;
+        box-shadow: 0px 3px 68px 0px rgba(255, 197, 12, 0.35);
+      }
+
+      &-3 {
+        background-color: #ec407a;
+        box-shadow: 0px 3px 68px 0px rgba(236, 64, 122, 0.35);
+      }
+      &-4 {
+        background-color: #ff6331;
+        box-shadow: 0px 3px 68px 0px rgba(255, 99, 49, 0.35);
+      }
+      &-5 {
+        background-color: #13b6ff;
+        box-shadow: 0px 3px 68px 0px rgba(19, 182, 255, 0.35);
+        background-image: url(../../assets/shapebg5.svg);
+      }
+      &-6 {
+        background-color: #49af46;
+        box-shadow: 0px 3px 68px 0px rgba(73, 175, 70, 0.35);
+      }
     }
   }
 }
