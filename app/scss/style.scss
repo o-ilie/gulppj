@@ -219,15 +219,18 @@
       &-2 {
         background-color: #ffc50c;
         box-shadow: 0px 3px 68px 0px rgba(255, 197, 12, 0.35);
+        background-image: url(../../assets/shapebg2.svg);
       }
 
       &-3 {
         background-color: #ec407a;
         box-shadow: 0px 3px 68px 0px rgba(236, 64, 122, 0.35);
+        background-image: url(../../assets/shapebg3.svg);
       }
       &-4 {
         background-color: #ff6331;
         box-shadow: 0px 3px 68px 0px rgba(255, 99, 49, 0.35);
+        background-image: url(../../assets/shapebg4.svg);
       }
       &-5 {
         background-color: #13b6ff;
@@ -237,7 +240,30 @@
       &-6 {
         background-color: #49af46;
         box-shadow: 0px 3px 68px 0px rgba(73, 175, 70, 0.35);
+        background-image: url(../../assets/shapebg6.svg);
       }
+    }
+  }
+}
+
+/* Resume Section */
+#resume {
+  margin-top: 5rem;
+  filter: drop-shadow(0px 0px 68px rgba(19, 182, 255, 0.24));
+}
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8% 10%;
+  clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
+  background: $white;
+
+  &-content {
+    display: flex;
+    gap: 4rem;
+
+    .sidebar {
     }
   }
 }
