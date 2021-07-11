@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flaticon.ttf?58995faf6397e16f291a7d03d0b1dd46") format("truetype"),
-url("./flaticon.woff?58995faf6397e16f291a7d03d0b1dd46") format("woff"),
-url("./flaticon.woff2?58995faf6397e16f291a7d03d0b1dd46") format("woff2"),
-url("./flaticon.eot?58995faf6397e16f291a7d03d0b1dd46#iefix") format("embedded-opentype"),
-url("./flaticon.svg?58995faf6397e16f291a7d03d0b1dd46#flaticon") format("svg");
+    src: url("./flaticon.ttf?35e0942e01576fda8afabbbe7d32c604") format("truetype"),
+url("./flaticon.woff?35e0942e01576fda8afabbbe7d32c604") format("woff"),
+url("./flaticon.woff2?35e0942e01576fda8afabbbe7d32c604") format("woff2"),
+url("./flaticon.eot?35e0942e01576fda8afabbbe7d32c604#iefix") format("embedded-opentype"),
+url("./flaticon.svg?35e0942e01576fda8afabbbe7d32c604#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -18,21 +18,48 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-search-engine:before {
+.flaticon-ux-interface:before {
     content: "\f101";
 }
-.flaticon-coding:before {
+.flaticon-motion-graphic:before {
     content: "\f102";
 }
-.flaticon-ux-interface:before {
+.flaticon-cloud-service:before {
     content: "\f103";
 }
-.flaticon-layers:before {
+.flaticon-graduation:before {
     content: "\f104";
 }
-.flaticon-motion-graphic:before {
+.flaticon-pallete:before {
     content: "\f105";
 }
-.flaticon-cloud-service:before {
+.flaticon-monitor:before {
     content: "\f106";
+}
+.flaticon-search-engine:before {
+    content: "\f107";
+}
+.flaticon-coding:before {
+    content: "\f108";
+}
+.flaticon-layers:before {
+    content: "\f109";
+}
+.flaticon-future:before {
+    content: "\f10a";
+}
+.flaticon-behance-logo:before {
+    content: "\f10b";
+}
+.flaticon-dribbble-logo:before {
+    content: "\f10c";
+}
+.flaticon-pinterest-social-logo:before {
+    content: "\f10d";
+}
+.flaticon-skype:before {
+    content: "\f10e";
+}
+.flaticon-facebook-logo:before {
+    content: "\f10f";
 }

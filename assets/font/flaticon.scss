@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?58995faf6397e16f291a7d03d0b1dd46") format("truetype"),
-url("./flaticon.woff?58995faf6397e16f291a7d03d0b1dd46") format("woff"),
-url("./flaticon.woff2?58995faf6397e16f291a7d03d0b1dd46") format("woff2"),
-url("./flaticon.eot?58995faf6397e16f291a7d03d0b1dd46#iefix") format("embedded-opentype"),
-url("./flaticon.svg?58995faf6397e16f291a7d03d0b1dd46#flaticon") format("svg");
+    src: url("./flaticon.ttf?35e0942e01576fda8afabbbe7d32c604") format("truetype"),
+url("./flaticon.woff?35e0942e01576fda8afabbbe7d32c604") format("woff"),
+url("./flaticon.woff2?35e0942e01576fda8afabbbe7d32c604") format("woff2"),
+url("./flaticon.eot?35e0942e01576fda8afabbbe7d32c604#iefix") format("embedded-opentype"),
+url("./flaticon.svg?35e0942e01576fda8afabbbe7d32c604#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,29 +21,65 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon-map: (
-    "search-engine": "\f101",
-    "coding": "\f102",
-    "ux-interface": "\f103",
-    "layers": "\f104",
-    "motion-graphic": "\f105",
-    "cloud-service": "\f106",
+    "ux-interface": "\f101",
+    "motion-graphic": "\f102",
+    "cloud-service": "\f103",
+    "graduation": "\f104",
+    "pallete": "\f105",
+    "monitor": "\f106",
+    "search-engine": "\f107",
+    "coding": "\f108",
+    "layers": "\f109",
+    "future": "\f10a",
+    "behance-logo": "\f10b",
+    "dribbble-logo": "\f10c",
+    "pinterest-social-logo": "\f10d",
+    "skype": "\f10e",
+    "facebook-logo": "\f10f",
 );
 
-.flaticon-search-engine:before {
-    content: map-get($flaticon-map, "search-engine");
-}
-.flaticon-coding:before {
-    content: map-get($flaticon-map, "coding");
-}
 .flaticon-ux-interface:before {
     content: map-get($flaticon-map, "ux-interface");
-}
-.flaticon-layers:before {
-    content: map-get($flaticon-map, "layers");
 }
 .flaticon-motion-graphic:before {
     content: map-get($flaticon-map, "motion-graphic");
 }
 .flaticon-cloud-service:before {
     content: map-get($flaticon-map, "cloud-service");
+}
+.flaticon-graduation:before {
+    content: map-get($flaticon-map, "graduation");
+}
+.flaticon-pallete:before {
+    content: map-get($flaticon-map, "pallete");
+}
+.flaticon-monitor:before {
+    content: map-get($flaticon-map, "monitor");
+}
+.flaticon-search-engine:before {
+    content: map-get($flaticon-map, "search-engine");
+}
+.flaticon-coding:before {
+    content: map-get($flaticon-map, "coding");
+}
+.flaticon-layers:before {
+    content: map-get($flaticon-map, "layers");
+}
+.flaticon-future:before {
+    content: map-get($flaticon-map, "future");
+}
+.flaticon-behance-logo:before {
+    content: map-get($flaticon-map, "behance-logo");
+}
+.flaticon-dribbble-logo:before {
+    content: map-get($flaticon-map, "dribbble-logo");
+}
+.flaticon-pinterest-social-logo:before {
+    content: map-get($flaticon-map, "pinterest-social-logo");
+}
+.flaticon-skype:before {
+    content: map-get($flaticon-map, "skype");
+}
+.flaticon-facebook-logo:before {
+    content: map-get($flaticon-map, "facebook-logo");
 }
