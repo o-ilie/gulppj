@@ -38,7 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/font/flaticon.css" />
 
     <!-- CSS File -->
-    <link rel="stylesheet" href="dist/style.css?cb=1626025381951" />
+    <link rel="stylesheet" href="dist/style.css?cb=1626159179788" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -211,12 +211,12 @@
                 <i class="flaticon-pallete"></i>
                 <i class="flaticon-search-engine"></i>
               </div>
-              <ul>
-                <li><a href="#section-education">Education</a></li>
-                <li><a href="#section-experience">Work History</a></li>
-                <li><a href="#section-programming">Programming Skill</a></li>
-                <li><a href="#section-designer">Designer Skills</a></li>
-                <li><a href="#section-seo">SEO Skills</a></li>
+              <ul class="tabs">
+                <li class="active" data-tab="section-education">Education</li>
+                <li data-tab="section-experience">Work History</li>
+                <li data-tab="section-programming">Programming Skill</li>
+                <li data-tab="section-designer">Designer Skills</li>
+                <li data-tab="section-seo">SEO Skills</li>
               </ul>
             </div>
 
@@ -288,7 +288,31 @@
                   </p>
                 </div>
               </div>
-              <div id="section-programming" class="sidebar-content"></div>
+              
+              <div id="section-programming" class="sidebar-content">
+                <p>HTML</p>
+                <div class="skills-container">
+                  <div class="skills html">90%</div>
+                </div>
+                
+                <p>CSS</p>
+                <div class="skills-container">
+                  <div class="skills css">80%</div>
+                </div>
+                
+                <p>JavaScript</p>
+                <div class="skills-container">
+                  <div class="skills js">65%</div>
+                </div>
+                
+                <p>PHP</p>
+                <div class="skills-container">
+                  <div class="skills php">60%</div>
+                </div>
+                 
+                </div>
+              </div>
+
               <div id="section-designer" class="sidebar-content">cccc</div>
               <div id="section-seo" class="sidebar-content">ddd</div>
             </div>
@@ -322,6 +346,6 @@
     </main>
 
     <!-- JavaScript File -->
-    <script src="dist/all.js?cb=1626025381951"></script>
+    <script src="dist/all.js?cb=1626159179788"></script>
   </body>
 </html>

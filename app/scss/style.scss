@@ -316,6 +316,12 @@
       }
 
       &-content {
+        display: none;
+
+        &.active {
+          display: inherit;
+        }
+
         h5 {
           color: $clSecondary;
           font-weight: 600;
@@ -337,16 +343,16 @@
           margin-bottom: 0;
         }
 
-        .container {
+        .skills-container {
           width: 100%;
           background-color: #ddd;
+        }
 
-          .skills {
-            text-align: right;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            color: white;
-          }
+        .skills {
+          text-align: right;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          color: white;
         }
 
         .html {
