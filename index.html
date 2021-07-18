@@ -38,10 +38,10 @@
     <link rel="stylesheet" type="text/css" href="../assets/font/flaticon.css" />
 
     <!-- CSS File -->
-    <link rel="stylesheet" href="dist/style.css?cb=1626373609441" />
+    <link rel="stylesheet" href="dist/style.css?cb=1626615496165" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">WA.</a>
         <button
@@ -58,16 +58,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link activeN" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -365,21 +367,21 @@
         <div class="divider"></div>
 
         <div class="portfolio-navbar">
-          <ul class="activP">
-            <li><a href="#section-all">All Work</a></li>
-            <li><a href="#section-illustration ">Illustration</a></li>
-            <li><a href="#section-animation">Animation</a></li>
-            <li><a href="#section-app">App UI</a></li>
-            <li><a href="#section-web">Web UI</a></li>
-            <li><a href="#section-social">Social Media</a></li>
-            <li><a href="#section-print">Print Design</a></li>
+          <ul>
+            <li class="list activeP" data-filter="all">All Work</li>
+            <li class="list" data-filter="illustration ">Illustration</li>
+            <li class="list" data-filter="animation">Animation</li>
+            <li class="list" data-filter="app">App UI</li>
+            <li class="list" data-filter="web">Web UI</li>
+            <li class="list" data-filter="social">Social Media</li>
+            <li class="list" data-filter="print">Print Design</li>
           </ul>
         </div>
 
         <div class="portfolio-content">
-          <img id="section-illustration" src="/assets/Layer 2.png" />
-          <img id="section-animation" src="/assets/Layer 3.png" />
-          <img id="section-app" src="/assets/Layer 4.png" />
+          <img class="itemBox illustration web" src="/assets/Layer 2.png" />
+          <img class="itemBox animation social" src="/assets/Layer 3.png" />
+          <img class="itemBox app print" src="/assets/Layer 4.png" />
         </div>
       </section>
 
@@ -485,11 +487,34 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
+
+        <iframe
+          class="map"
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
       </section>
     </main>
+    <footer>
+      <div class="copyright">
+        <p>© 2019 createuiux. All rights reserved.</p>
+      </div>
+      <div class="socialMedia">
+        <i class="flaticon-facebook-logo"></i>
+        <i class="flaticon-behance-logo"></i>
+        <i class="flaticon-dribbble-logo"></i>
+        <i class="flaticon-pinterest-social-logo"></i>
+        <i class="flaticon-skype"></i>
+      </div>
+    </footer>
 
     <!-- JavaScript File -->
 
-    <script src="dist/all.js?cb=1626373609441"></script>
+    <script src="dist/all.js?cb=1626615496165"></script>
   </body>
 </html>

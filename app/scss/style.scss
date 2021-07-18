@@ -7,8 +7,6 @@
 .navbar {
   background-color: $white;
   box-shadow: 0px 3px 68px 0px rgba(4, 195, 255, 0.16);
-  height: 150px;
-  z-index: 397;
   padding: 0 10%;
 
   &-collapse {
@@ -24,8 +22,9 @@
     color: $black;
     font-weight: 500;
 
-    &:active {
+    &.activeN {
       color: $clPrimary;
+      font-weight: 600;
     }
   }
 
@@ -40,7 +39,7 @@
 .page-fold {
   display: grid;
   width: 100%;
-  padding: 8% 6% 13% 10%;
+  padding: 15% 6% 13% 10%;
   grid-template-columns: repeat(4, 1fr);
   background: bottom no-repeat url(../../assets/bgshape.png);
   background-size: contain;
@@ -95,7 +94,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 8% 10%;
+  margin: 0 10%;
+  padding-top: 10%;
 
   .subtitle {
     color: $clPrimary;
@@ -149,13 +149,16 @@
 
 .title {
   color: $clPrimary;
+  z-index: 10;
 }
 
 .subtitle {
   letter-spacing: 4px;
+  z-index: 10;
 }
 
 .divider {
+  z-index: 10;
   width: 40px;
   height: 10px;
   border-radius: 6px;
@@ -178,6 +181,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10%;
 
   &-cards {
     display: flex;
@@ -254,7 +258,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8% 10%;
+  padding: 10%;
   clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   background: $white;
 
@@ -305,6 +309,7 @@
 
         li {
           padding: 5px 30px;
+          cursor: pointer;
 
           a {
             color: inherit;
@@ -345,6 +350,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
+  padding-top: 10%;
 
   &-navbar {
     padding: 4%;
@@ -356,18 +362,22 @@
 
       li {
         display: inline;
-        padding-right: 6%;
+        cursor: pointer;
+        padding: 0.5% 2%;
 
-        a {
-          color: inherit;
+        &.activeP {
+          background-color: $clPrimary;
+          border-radius: 20px;
+          color: #fff;
         }
       }
     }
   }
 
   &-content {
-    text-align: center;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     img {
       width: 28rem;
     }
@@ -469,7 +479,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  padding-top: 10%;
+  position: relative;
 
   &-form {
     width: 40%;
@@ -478,6 +489,7 @@
     filter: drop-shadow(0 0 46.5px rgba(19, 182, 255, 0.24));
     align-self: flex-end;
     margin: 9%;
+    z-index: 11;
 
     input,
     textarea {
@@ -503,6 +515,38 @@
       width: 100%;
       height: 50px;
       font-size: 18px;
+    }
+  }
+
+  .map {
+    width: 100%;
+    height: 140vh;
+    position: absolute;
+  }
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  padding: 2% 10%;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+  z-index: 20;
+  background-color: $white;
+
+  .socialMedia {
+    display: flex;
+    gap: 10px;
+
+    i {
+      font-size: 30px;
+      cursor: pointer;
+
+      &:active,
+      &:hover {
+        color: $clPrimary;
+      }
     }
   }
 }
