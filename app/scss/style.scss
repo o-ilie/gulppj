@@ -7,7 +7,17 @@
 .navbar {
   background-color: $white;
   box-shadow: 0px 3px 68px 0px rgba(4, 195, 255, 0.16);
-  padding: 0 10%;
+  padding: 0;
+
+  .navbar-toggler {
+    border: 2px solid $clPrimary;
+    &-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(11, 190, 173)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+  }
+  .container-fluid {
+    padding: 0 10%;
+  }
 
   &-collapse {
     justify-content: flex-end;
@@ -32,6 +42,12 @@
     font-size: 78px;
     color: $clPrimary;
     font-weight: bold;
+  }
+
+  @media #{$mq-1180-down} {
+    .container-fluid {
+      padding: 0 5%;
+    }
   }
 }
 
@@ -69,6 +85,12 @@
       width: 90%;
     }
   }
+
+  @media #{$mq-1180-down} {
+    .content {
+      grid-column: 1/4;
+    }
+  }
 }
 
 .btn {
@@ -86,6 +108,16 @@
   &-secondary {
     filter: drop-shadow(0px 16px 16px rgba(245, 127, 23, 0.24));
     background-color: #f57f17;
+  }
+}
+@media #{$mq-1180-down} {
+  .btn {
+    width: 160px;
+    height: 40px;
+
+    &-primary {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -118,6 +150,12 @@
       img {
         width: 100%;
         height: 42rem;
+
+        @media #{$mq-1180-down} {
+          .img {
+            height: 40rem;
+          }
+        }
       }
     }
 
@@ -144,6 +182,12 @@
         }
       }
     }
+  }
+}
+
+@media #{$mq-1000-down} {
+  .about {
+    margin: 0;
   }
 }
 
@@ -195,6 +239,7 @@
       padding: 3%;
       flex: 1 1 30%;
       max-width: 370px;
+      min-width: 250px;
       height: 370px;
       color: $white;
       text-align: center;
@@ -391,21 +436,25 @@
   .pricing {
     display: flex;
     flex-direction: column;
+    padding: 15rem 0;
     align-items: center;
-    padding: 10%;
     clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
     background: $white;
 
     &-cards {
       display: flex;
       gap: 2%;
-      padding: 5%;
+      margin-top: 5%;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
 
       .card {
         text-align: center;
         width: 370px;
         filter: drop-shadow(0 0 34px rgba(96, 233, 255, 0.27));
         border: none;
+        margin: 2%;
 
         .header {
           padding: 3%;
@@ -470,6 +519,11 @@
           background-color: #f5276c;
         }
       }
+    }
+  }
+
+  @media #{$mq-1180-down} {
+    .pricing {
     }
   }
 }
