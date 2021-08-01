@@ -14,6 +14,16 @@ $(document).ready(function () {
       .removeClass("active");
   });
 
+  $(".icons i").click(function () {
+    var tab_id = $(this).attr("data-tab");
+
+    $(this).addClass("active").siblings().removeClass("active");
+    $("#" + tab_id)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+  });
+
   $(".list").click(function () {
     var value = $(this).attr("data-filter");
     if (value == "all") {

@@ -1,7 +1,19 @@
 html {
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 100% !important;
   scroll-behavior: smooth;
+
+  @media #{$mq-1000-down} {
+    font-size: 85% !important;
+  }
+
+  @media #{$mq-620-down} {
+    font-size: 75% !important;
+  }
+
+  @media #{$mq-480-down} {
+    font-size: 60% !important;
+  }
 }
 
 *,
